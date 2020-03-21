@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Glossário</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+   	<link rel="stylesheet" href="styles.css">
+   	<script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+   	<script src="script.js"></script>
+</head>
+<body>
+	<div id="cabecalho" class="col-12">
+		<h1 id="a0">GLOSSÁRIO DE BIOLOGIA</p>
+	</div>	
+	<nav class="col-3">
+		<div id="cssmenu">
+  			<ul>
+        		<li class="has-sub"><a href="#">Sistema respiratório</a>
+        			<ul>
+        				<li><a href="javascript:ativar('avPulm')">Alvéolos Pulmunonares</a></li>
+        				<li><a href="javascript:ativar('traqueia')">Traqueia</a></li>
+        				<li><a href="javascript:ativar('bronquios')">Brônquios</a></li>
+        				<li><a href="javascript:ativar('diafragma')">Diafragma</a></li>
+        				<li><a href="javascript:ativar('hematose')">Hematose</a></li>
+        				<li><a href="javascript:ativar('laringe')">Laringe</a></li>
+        			</ul> 
+        		</li>
+        		<li class="has-sub"><a href="#">Sistema digestório</a>
+        			<ul>
+        				<li><a href="javascript:ativar('amSalivar')">Amilase salivar</a></li>
+       					<li><a href="javascript:ativar('amEssen')">Aminoácidos essenciais</a></li>
+       					<li><a href="javascript:ativar('bile')">Bile</a></li>         
+       					<li><a href="javascript:ativar('figado')">Fígado</a></li>
+       					<li><a href="javascript:ativar('nutricao')">Nutrição</a></li>
+       					<li><a href="javascript:ativar('pancreas')">Pâncreas</a></li>
+       					<li><a href="javascript:ativar('sucoent')">Suco entérico</a></li>
+       					<li><a href="javascript:ativar('sucogas')">Suco gástrico</a></li>
+       					<li><a href="javascript:ativar('sucopan')">Suco pâncreático</a></li>
+        				<li><a href="javascript:ativar('vilosidadesIntes')">Vilosidades intestinais</a></li>
+        			</ul>
+        		</li>
+       			<li class="has-sub"><a href="#">Sistema circulatório</a>
+       				<ul>
+       					<li><a href="javascript:ativar('diVen')">Diátole ventricular</a></li>
+       					<li><a href="javascript:ativar('sisVen')">Sístole ventricular</a></li>
+       					<li><a href="javascript:ativar('preAr')">Pressão arterial</a></li>
+       				</ul>
+       			</li>
+        		<li class="has-sub"><a href="#">Sistema imunitário</a>
+        			<ul>
+        				<li><a href="javascript:ativar('anticorpos')">Anticorpos</a></li>
+        				<li><a href="javascript:ativar('linfa')">Linfa</a></li>
+       					<li><a href="javascript:ativar('linfonodos')">Linfonodos</a></li>
+       					<li><a href="javascript:ativar('macrofagos')">Macrófagos</a></li>
+       					<li><a href="javascript:ativar('linfocitosB')">Linfócitos B</a></li>
+       					<li><a href="javascript:ativar('linfocitosT')">Linfócitos T</a></li>
+        				<li><a href="javascript:ativar('sisImun')">Sistema imunitário</a></li>
+        				<li><a href="javascript:ativar('soImun')">Soros imunes</a></li>
+        				<li><a href="javascript:ativar('vacinacao')">Vacinação</a></li>
+        				<li><a href="javascript:ativar('vaLin')">Vasos linfáticos</a></li>
+        			</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema Urinário</a>
+       				<ul>
+       					<li><a href="javascript:ativar('nefron')">Néfron</a></li>
+       					<li><a href="javascript:ativar('rins')">Rins</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema epitelial</a>
+        			<ul>
+        				<li><a href="javascript:ativar('derme')">Derme</a></li>
+        				<li><a href="javascript:ativar('epid')">Epiderme</a></li>
+        				<li><a href="javascript:ativar('glanseba')">Glândulas sebáceas</a></li>
+       					<li><a href="javascript:ativar('glansudo')">Glândulas sudoríparas</a></li>
+        				<li><a href="javascript:ativar('melan')">Melanina</a></li>
+        				<li><a href="javascript:ativar('pele')">Pele</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema esquelético</a>
+       				<ul>
+       					<li><a href="javascript:ativar('caixtora')">Caixa Torácica</a></li>
+       					<li><a href="javascript:ativar('colunvert')">Coluna vertebral</a></li>
+       					<li><a href="javascript:ativar('esqueaxial')">Esqueleto axial</a></li>
+       					<li><a href="javascript:ativar('esqueapen')">Esqueleto apendicular</a></li>
+        				<li><a href="javascript:ativar('lig')">Ligamentos</a></li>
+        				<li><a href="javascript:ativar('tend')">Tendões</a></li>
+       				</ul>
+       			</li>
+        		<li class="has-sub"><a href="#">Sistema muscular</a>
+        			<ul>
+        				<li><a href="javascript:ativar('fibramusc')">Fibra muscular</a></li>
+        				<li><a href="javascript:ativar('miomero')">Miômero</a></li>
+        				<li><a href="javascript:ativar('muscul')">Músculos</a></li>
+        				<li><a href="javascript:ativar('tmusescar')">Tecido muscular estriado cardíaco</a></li>
+        				<li><a href="javascript:ativar('tmuseses')">Tecido muscular estriado esquelético</a></li>
+        				<li><a href="javascript:ativar('tmusnes')">Tecido muscular não estriado</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema Nervoso</a>
+       				<ul>
+       					<li><a href="javascript:ativar('1')">Axônio</a></li>
+       					<li><a href="javascript:ativar('2')">Cérebro</a></li>
+       					<li><a href="javascript:ativar('3')">Dendritos</a></li>
+       					<li><a href="javascript:ativar('4')">Estrato mielínico</a></li>
+       					<li><a href="javascript:ativar('5')">Encéfalo</a></li>
+       					<li><a href="javascript:ativar('6')">Gânglios nervosos</a></li>
+       					<li><a href="javascript:ativar('7')">Gliócitos</a></li>
+       					<li><a href="javascript:ativar('8')">Impulso nervoso</a></li>
+       					<li><a href="javascript:ativar('9')">Medula espinal</a></li>
+       					<li><a href="javascript:ativar('10')">Nervos</a></li>
+       					<li><a href="javascript:ativar('11')">Nervos cranianos</a></li>
+       					<li><a href="javascript:ativar('12')">Nervos espinais</a></li>
+       					<li><a href="javascript:ativar('13')">Neurônios</a></li>
+       					<li><a href="javascript:ativar('14')">SNP autônomo</a></li>
+       					<li><a href="javascript:ativar('15')">SNP somático</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Paladar, visão e orelha</a>
+       				<ul>
+       					<li><a href="javascript:ativar('16')">Bulbo dos Olhos</a></li>
+       					<li><a href="javascript:ativar('17')">Lente</a></li>
+       					<li><a href="javascript:ativar('18')">Olfato</a></li>
+       					<li><a href="javascript:ativar('19')">Orelha</a></li>
+       					<li><a href="javascript:ativar('20')">Paladar</a></li>
+       					<li><a href="javascript:ativar('21')">Retina</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema Endócrino</a>
+       				<ul>
+       					<li><a href="javascript:ativar('22')">Adrenalina</a></li>
+       					<li><a href="javascript:ativar('23')">Calcitocina</a></li>
+       					<li><a href="javascript:ativar('24')">Cortisol</a></li>
+       					<li><a href="javascript:ativar('25')">Diabets melito</a></li>
+       					<li><a href="javascript:ativar('26')">Estrogéno</a></li>
+       					<li><a href="javascript:ativar('27')">Glândulas endócrinas</a></li>
+       					<li><a href="javascript:ativar('28')">Glucagon</a></li>
+       					<li><a href="javascript:ativar('29')">Hipófise</a></li>
+       					<li><a href="javascript:ativar('30')">Hormônio antidiurético</a></li>
+       					<li><a href="javascript:ativar('31')">Hormônio folículo estimulante</a></li>
+       					<li><a href="javascript:ativar('32')">Hormônio luteinizante</a></li>
+       					<li><a href="javascript:ativar('33')">Hormônios</a></li>
+       					<li><a href="javascript:ativar('34')">Hormônios tróficos</a></li>
+       					<li><a href="javascript:ativar('35')">Insulina</a></li>
+       					<li><a href="javascript:ativar('36')">Oxitocina</a></li>
+       					<li><a href="javascript:ativar('37')">Paratormônio</a></li>
+       					<li><a href="javascript:ativar('38')">Progesterona</a></li>
+       					<li><a href="javascript:ativar('39')">Prolactina</a></li>
+       					<li><a href="javascript:ativar('40')">Somatotrofina</a></li>
+       					<li><a href="javascript:ativar('41')">Tiroxina</a></li>
+       					<li><a href="javascript:ativar('42')">Testosterona</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema reprodutivo feminino</a>
+       				<ul>
+       					<li><a href="javascript:ativar('43')">Ciclo menstrual</a></li>
+       					<li><a href="javascript:ativar('44')">Corpo amarelo</a></li>
+       					<li><a href="javascript:ativar('45')">Endométrio</a></li>
+       					<li><a href="javascript:ativar('46')">Menstruação</a></li>
+       					<li><a href="javascript:ativar('47')">Ovários</a></li>
+       					<li><a href="javascript:ativar('48')">Ovulação</a></li>
+       					<li><a href="javascript:ativar('49')">Pudendo feminino</a></li>
+       					<li><a href="javascript:ativar('50')">Tubas uterinas</a></li>
+       					<li><a href="javascript:ativar('51')">Útero</a></li>
+       					<li><a href="javascript:ativar('52')">Vagina</a></li>
+       				</ul>
+       			</li>
+       			<li class="has-sub"><a href="#">Sistema reprodutivo masculino</a>
+       				<ul>
+       					<li><a href="javascript:ativar('53')">Ductos deferentes</a></li>
+       					<li><a href="javascript:ativar('54')">Escroto</a></li>
+       					<li><a href="javascript:ativar('55')">Esperma</a></li>
+       					<li><a href="javascript:ativar('56')">Glândulas seminais</a></li>
+       					<li><a href="javascript:ativar('57')">Pênis</a></li>
+       					<li><a href="javascript:ativar('58')">Próstata</a></li>
+       					<li><a href="javascript:ativar('59')">Testículo</a></li>
+       				</ul>
+       			</li>
+       		</ul>
+       	</div>	
+	</div>
+	</nav>
+		<div id="principal" class="col-9">
+			<h2 id="Termos">Termos</h2>
+			<div class="termo" id="avPulm">
+				<h3 >Alvéolos Pulmunonares:</h3>
+				<p>Os alvéolos pulmonares são bolsas com paredes finas e muito vascularizadas que tem por função realizar as trocas gasosas.</p>
+				<div class="img">
+					<img src="imagens/alveoloPulmonar.png" />
+				</div>
+			</div>
+			<div class="termo" id="amSalivar">			
+				<h3>Amilase salivar:</h3>
+				<p>Amilase salivar ou ptialina é uma enzima responsável pela digestão de amido e glicogênio em maltose. O pH ideal dessa enzima é próximo do neutro (6,7).</p>
+				<div class="img">
+					<img src="imagens/amSa.jpg">
+				</div>
+			</div>
+			<div class="termo" id="amEssen">
+				<h3 >Aminoácidos essenciais:</h3>
+				<p>São os aminoácidos que nosso corpo não consegue produzir/sintetizar. Alguns exemplos de aminoácidos essenciais são: Leucina, isoleucina, valina, triptofano, metionina, fenilalanina, treonina e lisina.</p>
+				<div class="img">
+					<img src="imagens/amEssen.jpg">
+				</div>
+			</div>
+			<div class="termo" id="bile">
+				<h3 >Bile:</h3>
+				<p>É uma substância que fica armazenada na vesícula biliar e produzida no fígado, reponsável por emulsificar gordura (dividir em moléculas menores). A enzima que realiza tal processo é a lípase pancreática. A bille também é responsável por armazenar substâncias que devem ser eliminadas do corpo como drogas, medicamentos, colesterol e outros.</p>
+				<div class="img">
+					<img src="">
+				</div>
+			</div>
+			<div class="termo" id="bronquios"> 
+				<h3 >Brônquios:</h3>
+				<p>Os brônquios são as ramificações da traqueia e sua função é levar ar aos bronquiolos.</p>
+				<div class="img">
+					<img src="imagens/traqueiaBronqLarin.jpg">
+				</div>
+			</div>
+			<div class="termo" id="diafragma">
+				<h3 >Diafragma:</h3>
+				<p>O diafragma é uma membrana musculosa, flexível e que separa o tórax do abdomen e dos músculos intercostais.</p>
+				<div class="img"></div>
+			</div>
+			<div class="termo" id="figado" >
+				<h3>Fígado:</h3>
+				<p>O fígado é um órgão localizado na parte superior direita do abdômen. O fígado tem funções digestivas e hormônais, na parte digestiva o fígado assimila gorduras e armazena. O fígado também excreta a bille. O fígado também exerce funções de desintoxicação, fazendo filtragem do sangue e enviando toxinas para os rins.</p>
+				<div class="img">
+					<img src="strutura-nefron.jpg">
+				</div>
+			</div>
+			<div class="termo" id="hematose">
+				<h3>Hematose:</h3>
+				<p>A hematose é uma troca gasosa. Esse processo ocorre nos alvéolos pulmonares em que o gás oxigênio se difunde nos capilares sanguíneos e penetra nas hemácias e combina-se com a hemoglobina formando a oxiemoglobina e chegando aos capilares sanguíneos de todos os tecidos. Nos tecidos, o gás oxigênio dissocia-se da hemoglobina, sai das hemácias e entra nas células, para produzir energia (junto com a glicose). Simultaneamente o gás carbônico adentra a hemoglobina.</p>
+				<div class="img">
+					<img src="imagens/hematose.jpg">
+				</div>
+			</div>
+			<div class="termo" id="laringe">
+				<h3 >Laringe:</h3>
+				<p>Estrutura tubublar com reforços cartilagionosos localizados no pescoço que conecta a faringe a traqueia e exerce função respiratória.</p>
+				<div class="img">
+					<img src="imagens/traqueiaBronqLarin.jpg">
+				</div>
+			</div>
+			<div class="termo" id="nutricao">
+				<h3 >Nutrição:</h3>
+				<p>Processo que consiste em adquirir matéria prima para produção de energia no interior das células.</p>
+				<div class="img">
+					<img src="imagens/nutricao.jpg">
+				</div>
+			</div>
+			<div class="termo" id="pancreas">
+				<h3 >Pâncreas:</h3>
+				<p>É uma glândula com funções digestivas e hormônais. Secreta o suco pancreático no intestino delgado pelo ducto pancreático e depois para a ampola hepatopancreática e por fim chegam no intestino delgado. O pâncreas também produz hormônios como a insulina e o glucagon que agem na regulação de açucares no sangue (taxa de glicose).</p>
+				<div class="img">
+					<img src="strutura-nefron.jpg">
+				</div>
+			</div>
+			<div class="termo" id="sucoent" >
+				<h3>Suco entérico:</h3>
+				<p>Solução secretada pelo intestino delgado com pH alcalino, possui enzimas digestivas que terminam a digestão do quimo, assimilando lipídios, carboidratos e proteínas.</p>
+				<div class="img">
+					<img src="imagens/sucoEnt.jpg">
+				</div>
+			</div>
+			<div class="termo" id="sucogas">
+				<h3 >Suco gástrico:</h3>
+				<p>Solução secretada pelas glândulas gástricas (estomacais) com enzimas ácidas, que tem por função digerir proteínas em polipeptídios.</p>
+				<div class="img">
+					<img src="imagens/sucoGas">
+				</div>
+			</div>
+			<div class="termo" id="sucopan">
+				<h3 >Suco pâncreático:</h3>
+				<p>Solução alcalina produzina no pâncreas com enzimas que auxiliam no processo de digestão, que sai do pâncreas por meio do ducto pancreático. Seu pH fica em torno de 8, portanto é uma substância alcalina (básica).</p>
+				<div class="img">
+					<img src="imagens/sucoPanc.gif">
+				</div>
+			</div>
+			<div class="termo" id="traqueia">
+				<h3 >Traqueia:</h3>
+				<p>A traqueia é um tubo formado por anéis cartilagionosos que ramifica-se em brônquios, ela fica localizada logo abaixo da laringe. Essa estrutura é revestida por um epitélio aliado a células produtoras de muco, que auxiliam na purificação dos gases que passam pela traqueia. Sua função é conduzir o ar até os brônquios.</p>
+				<div class="img">
+					<img src="imagens/traqueiaBronqLarin.jpg">
+				</div>
+			</div>
+			<div class="termo" id="vilosidadesIntes">
+				<h3 >Vilosidades intestinais:</h3>
+				<p>As vilosidades intestinais são as dobras do intestino delgado, a parede do órgão é imensamente pregueada, essas pregas são as vilosidades e tem por função aumentar a absorção de nutritentes após a digestão.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="diVen">
+				<h3 >Diástole ventricular</h3>
+				<p>Parte do processo de circulação sanguínea na qual os ventrículos(câmara) do coração estão relaxados e recebendo sangue. No ventrículo direito o sangue chega pelo átrio direito(sangue venoso), já no ventrículo esquerdo o sangue chega pelo átrio esquerdo(sangue arterial).  </p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="sisVen" >
+				<h3 >Sístole ventricular:</h3>
+				<p>Parte do processo de circulação do sanguínea que ocorre a contração dos ventrículos na qual valvúlas entre o ventrículo e o átrio se fecham e o sangue é conduzido para as artérias pulmorar(ventrículo direito) e aorta(ventrículo esquerdo).</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="preAr">
+				<h3 >Pressão arterial:</h3>
+				<p>Assim que o ventrículo realiza a sístole e envia sangue para as artérias, o sangue se choca contre as paredes das artérias, a tensão resultante é a pressão arterial.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="vaLin">
+				<h3 >Vasos linfáticos:</h3>
+				<p>Canais distribuídos pelo organismo, os quais possuem válvulas que transportam a linfa na corrente sanguínea num único sentido, impedindo o refluxo. Atuam no sistema de defesa do organismo retirando células mortas e transportando os leucócitos (glóbulos brancos) que combatem as infecções no organismo.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="linfa">
+				<h3 >Linfa:</h3>
+				<p>Líquido transparente e alcalino semelhante ao sangue que circula pelos vasos linfáticos, não possui hemácias e, por isso, apresenta um aspecto esbranquiçado e leitoso. Responsável pela eliminação das impurezas, a linfa é produzida pelo intestino delgado e fígado.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="linfonodos">
+				<h3 >Linfonodos:</h3>
+				<p>Pequenos órgãos presentes no pescoço, no tórax, no abdômen, na axila e na virilha. São responsáveis por filtrarem a linfa antes dela retornar ao sangue, além de atuarem na defesa do organismo, impedindo a permanência de partículas estranhas no corpo.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="sisImun">
+				<h3 >Sistema imunitário:</h3>
+				<p>Sistema de defesa interno contra substâncias estranhas, é constituído por leucócitos (macrófagos e linfócitos) e por órgãos linfáticos onde eles se formam, amadurecem e se multiplicam.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="macrofagos">
+				<h3 >Macrofágos:</h3>
+				<p>Células que fagocitam agentes estranhos.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="linfocitosB">
+				<h3 >Linfócitos B:</h3>
+				<p>A principal função das células B é a produção de imunoglobulinas (anticorpos). Após ativação, esses linfócitos podem sofrer diferenciação em plasmócitos ou células B de memória.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="anticorpos">
+				<h3 >Anticorpos:</h3>
+				<p>Proteínas capazes de se ligar a substâncias estranhas e destruí-las, qualquer substância que desencadeia a produção de anticorpos é denominada de antígeno. Os anticorpos agem aderindo à superfície do corpo estranho, isto impede a multiplicação dos microorganismos e inibe a ação das toxinas.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="linfocitosT">
+				<h3 >Linfócitos T:</h3>
+				<p>São um grupo de glóbulos brancos(leucócitos) responsáveis pela defesa do organismo contra agentes desconhecidos (antígenos). Seu papel principal é como imunidade específica e imunidade celular, induzindo a Apoptose(autodestruição) de células invadidas por vírus, bactérias intracelulares, danificadas ou cancerígenas. </p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="vacinacao">
+				<h3 >Vacinação:</h3>
+				<p>É um tipo de imunização, por meio da aplicação na circulação sanguínea de soluções biologicas que estímulam a produção de anticorpos.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="soImun">
+				<h3 >Soros imunes:</h3>
+				<p>Podemos evidenciar que os soros imunes são preparações líquidas que apresentam os anticorpos/ capazes de combater toxinas liberadas por agentes infecciosos e venenos de animais peçonhentos como cobras, aranhas, escorpiões e taturanas.</p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="rins">
+				<h3 >Rins:</h3>
+				<p>Os seres humanos possuem dois rins, que são glândulas de cor vermelho-escuro, em forma de feijão, localizadas na região posterior do abdômen. Fazem parte do sistema excretor e osmorregulador, pois filtram e excretam os dejetos presentes no sangue. O néfron é chamado de unidade funcional do rim, pois cada néfron realiza todas as funções renais. </p>
+				<div class="img">
+				</div>
+			</div>
+			<div class="termo" id="nefron">
+				<h3 >Néfron:</h3>
+				<p>
+					O néfron é a estrutura funcional do rim. Ele possui três funções: a filtração, a reabsorção e secreção. O sangue chega até o a cápsula de Bowman pela artéria Aferente, que diminui seu calibre e se torna arteríola, que se embola, dando origem ao glomérulo. Essa arteríola sai da cápsula de Bowman fazendo o processo inverso, aumentando seu calibre e chamando artéria Eferente. O sangue chega no glomérulo com uma certa pressão fazendo com que algumas substâncias adentrem o túbulo Proximal. As substâncias são: água, sais minerais, vitaminas e aminoácidos. O Líquido formado nessa estrutura se chama filtrado glomerular. O Túbulo proximal leva o filtrado glomerular até a Alça de Henle. A Alça de Henle recebe o filtrado glomerular do Túbulo proximal. Na região da alça de Henle encontra-se arteríolas e vênulas. Essa estrutura é dividida em Alça de Henle descendente (parte que desce) e Alça de Henle ascendente (parte que sobe). Na parte descendente, a alça perde água, que por sua vez é reabsorvida por osmose. Na parte ascendente, a alça perde sais minerais que é reabsorvido por transporte ativo. Após estes processos, a alça de Henle, conduz o filtrado até o túbulo distal. Os capilares sanguíneos que estão próximos ao túbulo distal, secretam substâncias metabolizadas, amônia e medicamentos para o interior do túbulo. Para controlar o PH da urina os capilares também secretam íons de sódio e o túbulo libera para os capilares, íons de potássio. A substância formada após esse processo é a Urina, que será encaminhada para o ducto coletor. O ducto coletor é responsável pela reabsorção de água e encaminhar a urina para os uréteres, e em seguida para as bexigas.
+					<div>
+						<img src="imagens/estrutura-nefron.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="pele">
+				<h3 >Pele:</h3>
+				<p>
+					Orgão responsável por manter a temperatura corporal, pela sensibilidade tátil e por proteger contra agentes biológicos, quimícos e fisícos e é formado pela derme e epiderme.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="epid">
+				<h3>Epiderme:</h3>
+				<p>
+					Camada mais externa da pele formada de tecido epitelial, que são células justapostas, e possui melanócito que produz a melanina. Possui 3 camadas: Camada Germinativa que é a mais interna e é responsável pela prodção de novas células para epiderme. Camada espinhosa é a do meio e mantêm as células unidas, devido à presença dos desmossomos e a Camada Queratinizada que possui mais queratina que garante à pele a sua consistência.
+					<div class="img">
+						<img src="imagens/camPele.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="melan">
+				<h3>Melanina:</h3>
+				<p>
+					A melanina é uma proteína produzida a partir da tirosina, um aminoácido essencial, pelos melanócitos. Esse pigmento apresenta normalmente coloração marrom e sua principal função é proteger o DNA contra a radiação emitida pelo sol.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="glanseba">
+				<h3 >Glândulas sebáceas:</h3>
+				<p>
+					Encontradas anexas aos pelos em todas as regiões do corpo, sendo mais numerosas, mas de menor volume, responsáveis por produzir sebo, uma substância lipídica que evita o ressecamento da pele e a perda excessiva de água.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="glansudo">
+				<h3 >Glândulas sudoríparas:</h3>
+				<p>
+					Células epiteliais presentes na pele dos mamíferos e possuem a importante função de secretar o suor, possibilitando a regulação da temperatura corporal e a eliminação de substâncias tóxicas ao organismo.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="derme">
+				<h3 >Derme:</h3>
+				<p>
+					Camada mais interna da pele que possui vasos sanguíneos que nutrem as células superficiais da pele e as fibras nervosas responsáveis pela sensibilidade cutânea e é um isolante térmico.
+					<div class="img">
+						<img src="imagens/camPele.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="tend">
+				<h3 >Tendões:</h3>
+				<p>
+					Estrutura que tem a função ligar musculos aos ossos. Um exemplo é o tendão de aquiles.
+					<div class="img">
+						<img src="imagens/tendoes.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="lig">
+				<h3 >Ligamentos:</h3>
+				<p>
+					Estrutura que liga ossos aos ossos.
+					<div class="img">
+						<img src="imagens/ligamento.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="esqueaxial">
+				<h3>Esqueleto axial:</h3>
+				<p>
+					Conjunto de ossos que formam a coluna vertebral, a caixa torácica e o crânio. Sua função é proteger o Sistema Nervoso Central e alguns dos órgãos vitais localizados na região torácica.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="esqueapen">
+				<h3>Esqueleto apendicular:</h3>
+				<p>
+					Conjunto de ossos que formam os membros superiores, como por exemplo o braço e inferiores como a perna e a bacia.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="colunvert">
+				<h3 >Coluna vertebral:</h3>
+				<p>
+					Eixo central do corpo responsável pela sustentação.  Está na região cervical, torácica, lombar e na região do sacro.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="colunvert">
+				<h3 >Coluna vertebral:</h3>
+				<p>
+					Formada pelas costelas, osso externo e a costeça flutuante. Tem como função proteger parte do sistema cardiovascular, respiratório, digestivo, nervoso e linfático em seu interior e sua estrutura também permite que os pulmões se dilatem e voltem ao formato do normal, permitindo a respiração em varias densidades.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="caixtora">
+				<h3>Caixa torácica:</h3>
+				<p>
+					Formada pelas costelas, osso esterno e a costeça flutuante. Tem como função proteger parte do sistema cardiovascular, respiratório, digestivo, nervoso e linfático em seu interior e sua estrutura também permite que os pulmões se dilatem e voltem ao formato do normal, permitindo a respiração em varias densidades.
+					<div class="img">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="muscul">
+				<h3 >Músculos:</h3>
+				<p>
+					 Tecido formado por fibras musculares que podem estar relacionados com o esqueleto (os músculos esqueléticos) ou fazer parte da estrutura de órgãos (os músculos viscerais). Tem por função oferecer estabilidade articular, manter a postura, converter a energia mecânica em química, proporcionar calor, estimular os vasos sanguíneos, etc.
+					<div class="img">
+						<img src="imagens/musculos.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="tmusnes">
+				<h3>Tecido muscular não estriado:</h3>
+				<p>
+					Células musculares lisas que não apresentam estriação transversal, a contração é involuntária e lenta e ocorre nas artérias, sendo responsável por sua contração. Existem também no esôfago, no estômago e nos intestinos, sendo responsável pelo peristaltismo (ou peristalse) nesses órgãos que são os movimentos de contrações em ondas que deslocam o material alimentar dentro desses órgãos do sistema digestório.
+					<div class="img">
+						<img src="imagens/musesncae.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="tmusescar">
+				<h3 >Tecido muscular estriado cardíaco:</h3>
+					<p>
+					Tecido existente apenas no coração e apresenta contração independente da vontade do indivíduo (contração involuntária). O músculo cardíaco é capaz de auto-estimulação, não dependendo de um estímulo nervoso para iniciar a contração, na qual é forte e rítmica .
+					<div class="img">
+						<img src="imagens/musesncae.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="tmuseses">
+				<h3 >Tecido muscular estriado esquelético:</h3>
+				<p>
+					Tecido que constitui a maior parte da musculatura do corpo dos vertebrados, formando a carne. Essa musculatura cobre totalmente o esqueleto e está presa aos ossos. Esse tipo de tecido apresenta contração voluntária (que depende da vontade do indivíduo).
+					<div class="img">
+						<img src="imagens/musesncae.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="miomero">
+				<h3 >Miômero:</h3>
+				<p>
+					Componente básico do músculo que permite a contração muscular. É constituído por um complexo de proteínas, entre elas actina e miosina que são alinhadas em série para formar a miofibrila no interior das células musculares.
+					<div class="img">
+						<img src="imagens/miomero.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="fibramusc">
+				<h3 >Fibra muscular:</h3>
+				<p>
+					Células dos tecidos musculares alongadas que são ricas em dois tipos de filamento protéico: os de actina e os de miosina, responsáveis pela grande capacidade de contração e distensão dessas células. Quando um músculo é estimulado a se contrair, os filamentos de actina deslizam entre os filamentos de miosina. A célula diminui em tamanho, caracterizando a contração. Ela está divida em tecido muscular não estriado, tecido muscular estriado cardíaco, tecido muscular esquelético.
+					<div class="img">
+						<img src="imagens/fibra.jpg">
+					</div>
+				</p>
+			</div>
+			<div class="termo" id="1">
+				<h3>Axônio</h3>
+				<p>
+					Fibras nervosas prolongadas que trasmitem impulsos elétricos entre os neurônios e possui terminações nervosas que se conectam com muitos neurônios por vez.
+				</p>
+			</div>
+			<div class="termo" id="2">
+				<h3>Cérebro</h3>
+				<p>
+					Parte do sistema nervoso para onde são dirigidas todas as informações. Formado por dois tecidos: córtex cerebral que é o mais externo e mais extenso, composto pelos corpos celulares dos neurônios e outras células nervosas e o núcleo cerebral que é rico em fibras nervosas que estabelecem comunicação entre o cótex cerebral, os orgãos sensoriais e os músculos.
+				</p>
+			</div>
+			<div class="termo" id="3">
+				<h3>Dendritos</h3>
+				<p>
+					Prolongamento dos neurônios em grande quantidade que tem a função de receber estímulos nervosos de outros neurônios e transmití-los para o corpo da célula.
+				</p>
+			</div>
+			<div class="termo" id="5">
+				<h3>Encéfalo</h3>
+				<p>
+					Conjunto do tronco cerebral formado no inicio do desenvolvimento a partir da dilatação da região anteiros do tubo nervoso. Revestido por 3 membranas de meninges, cuja principal função é amortecer impactos e transportar certas substâncias de importancia para o sistema nervoso.
+				</p>
+			</div>
+			<div class="termo" id="4">
+				<h3>Estrato mielínico</h3>
+				<p>
+					Formado pelos gliócitos com a função de isolante térmico e de encapar o axônio, protegendo e axiliando o funcionamento dos neurônios.
+				</p>
+			</div>
+			<div class="termo" id="6">
+				<h3>Gânglios nervosos</h3>
+				<p>
+					Dilatações presentes em certos nervos, formados por corpos celulares de neurônios. Funcionam como períodos de interligação entre neurônios e estruturas do organismo.
+				</p>
+			</div>
+			<div class="termo" id="7">
+				<h3>Gliócitos</h3>
+				<p>
+					Células que compõem o sistema nervoso e são responsáveis por proteger e nutrir os neurônios.
+				</p>
+			</div>
+			<div class="termo" id="8">
+				<h3>Impulso nervoso</h3>
+				<p>
+					Corrente elétrica que passa pela membrana dos neurônios e se distribui ao longo dessas células, garante que um sinal seja percebido e que uma resposta seja enviada. Acontece a partir de uma alteração na diferença do potencial elétrico através da membrana plasmática do neurônio que ocorre devido à capacidade da membrana de selecionar os íons que entram e saem da célula.
+				</p>
+			</div>
+			<div class="termo" id="9">
+				<h3>Medula espinal</h3>
+				<p>
+					Orgão localizado ao longo da coluna vertebral revestida por meninges que possui o líquido cefalorraquidiano. Nesse orgão ocorrem respostas simples a estímulos que recebemos e passa por ela também as informações transmitidas do cérebro aos orgãos.
+				</p>
+			</div>
+			<div class="termo" id="10">
+				<h3>Nervos</h3>
+				<p>
+					Estruturas filamentosa que partem do encéfalo e da medula espinal e atinguem diversas partes do corpo. Possui a função de garantir a comunicação entre o SNC e os orgãos efetores e de sensibilidade. Existem dois tipos: nervos cranianos e nervos espinais.
+				</p>
+			</div>
+			<div class="termo" id="11">
+				<h3>Nervos cranianos</h3>
+				<p>
+					Tem a função de conectar o encéfalo aos orgãos.
+				</p>
+			</div>
+			<div class="termo" id="12">
+				<h3>Nervos espinais</h3>
+				<p>
+					Tem a funão de se conectar com a medula espinal, células sensoriais e músculos.
+				</p>
+			</div>
+			<div class="termo" id="13">
+				<h3>Neurônios</h3>
+				<p>
+					Células que compões o sistema nervoso e são responsáveis pela condução do impulso nervoso.
+				</p>
+			</div>
+			<div class="termo" id="14">
+				<h3>SNP autonômo</h3>
+				<p>
+					Excusivamente motor estimulando musculatura lisa e cardíaca. Dividido em: Sistema Nervoso Simpático que é responsável por preparar o organismo para responder a situações de estresse e emergência aumentando a frequência cardíaca, etc, e o Sistema Nervoso Parassimpático responsável por fazer o corpo retornar a um estado de calma diminuindo a frequência cardíaca, etc.
+				</p>
+			</div>
+			<div class="termo" id="15">
+				<h3>SNP somático</h3>
+				<p>
+					Ações voluntárias do organismo que apresentam ramos sentivos que são estímulos do ambiente externo e interno e motores que levam impulsos do SNC aos músculos esqueléticos.
+				</p>
+			</div>
+			<div class="termo" id="16">
+				<h3>Bulbo dos olhos</h3>
+				<p>
+					Orgãos responsáveis pelo sentido da visão. Formado por duas bolsas membranosas cheias de líquido, embutidas em cavidades ósseas do crânio.
+				</p>
+			</div>
+			<div class="termo" id="17">
+				<h3>Lente</h3>
+				<p>
+					Conjunto de lentes biconvexas localizadas atrás da iris que tem a curvatura modificada devido a ação da musculatura, dessa maneira focalizando as imagens de acordo com a distância e forma uma câmara que é preenchida pelo corpo vítreo.
+				</p>
+			</div>
+			<div class="termo" id="18">
+				<h3>Olfato</h3>
+				<p>
+					Sentido capaz de diferenciar cheiros localizado na região do epitélio olfatório que possuem células quimioreceptoras ciliados e recobertos por muco que são estimulados por substâncias químicas dispersas no ar.
+				</p>
+			</div>
+			<div class="termo" id="19">
+				<h3>Orelha</h3>
+				<p>
+					Orgão responsável pela audição e equilíbrio. Constiuído pela orelha externa que capta os sons e leva a membrana timpânica. Orelha média que possui 3 ossículos, que a partir da vibração da membrana timpânica, são movimentados atuando como transmissor à orelha interna. E pela orelha interna que tem a função de transmitir os estímulos das ondas sonoras até o cérebro.
+				</p>
+			</div>
+			<div class="termo" id="20">
+				<h3>Paladar</h3>
+				<p>
+					Sentido que juntamente com o olfato tem a capacidade de sentir sabor a partir das células quimiorreceptoras localizadas nas papilas gustatórias. Agem a partir de substâcias presentes no alimento que reagem as células e geram impulsos que são destinados ao SNC.
+				</p>
+			</div>
+			<div class="termo" id="21">
+				<h3>Retina</h3>
+				<p>
+					Camada fina de tcido sensível a luz, localizada no fundo do olho e é formada por células fotorreceptoras que captam e decodificam ondas luminosas e, por meio do nervo ótico, os enviam ao cérebro, onde se forma a visão
+				</p>
+			</div>
+			<div class="termo" id="22">
+				<h3>Adrenalina</h3>
+				<p>
+					Homônio produzido nas glândulas suprarenais e tem como função a contração dos vasos sanguíneos em situação de emergência.
+				</p>
+			</div>
+			<div class="termo" id="23">
+				<h3>Calcitocina</h3>
+				<p>
+					Hormônio encontrado na tireóide e tem como função decomposição do cálcio no sangue, reduzindo a sua contração no sangue.
+				</p>
+			</div>
+			<div class="termo" id="24">
+				<h3>Cortisol</h3>
+				<p>
+					Hormônio encontrado nas glândulas suprarenais e tem como função a transformação de proteínas e gorduras em carboidratos, conhecido como hormônio do estresse.
+				</p>
+			</div>
+			<div class="termo" id="25">
+				<h3>Diabetes melito</h3>
+				<p>
+					Doença que se caracteriza por um aumento nas taxas de glicose no sangue (hiperglicemia). Deficiência de insulina ou resposta diminuida ao hormônio. Rins não absorvem nutrientes. 
+					Tipo I - Deficiência na produção da insulina.
+					Tipo II - Células não respondem a insulina, que não permite a entrada de glicose para produzir energia.
+				</p>
+			</div>
+			<div class="termo" id="26">
+				<h3>Estrogéno</h3>
+				<p>
+					Hormônio feminino produzido no folículo ovariano que determina as características físicas e comportamentais das mulheres, como: quadril afunilada; mamas.
+				</p>
+			</div>
+			<div class="termo" id="27">
+				<h3>Glândulas endócrinas</h3>
+				<p>
+					Glândulas formadas por tecido epitelial e produtora de hormônios.
+				</p>
+			</div>
+			<div class="termo" id="28">
+				<h3>Glucagon</h3>
+				<p>
+					Hormônio produzido no pâncreas e tem como função a quebra de glicogênio em glicose, aumentando a concentração de açucar no sangue.
+				</p>
+			</div>
+			<div class="termo" id="29">
+				<h3>Hipófise</h3>
+				<p>
+					Glândula com função nervosa (neurohipófise) e endócrina (adenohipófise), regula o funcionamento de outras glândulas do corpo por hormônios tróficos.
+				</p>
+			</div>
+			<div class="termo" id="30">
+				<h3>Hormônio antidiurético</h3>
+				<p>
+					Hormônio da neurohipófise responsável pelo aumento da retenção de água nos rins.
+				</p>
+			</div>
+			<div class="termo" id="31">
+				<h3>Hormônio folículo estimulante</h3>
+				<p>
+					O hormônio folículo-estimulante (FSH) estimula a secreção de estrogênio, responsável pelo desenvolvimento e maturação dos folículos ovarianos, produzido pela hipófise.
+				</p>
+			</div>
+			<div class="termo" id="32">
+				<h3>Hormônio luteinizante</h3>
+				<p>
+					Também chamado de LH, é um hormônio produzido pela hipófise e que, nas mulheres, é responsável pelo amadurecimento dos folículos, ovulação e produção de progesterona, possuindo papel fundamental na capacidade reprodutiva da mulher. Nos homens, o LH também está diretamente relacionado à fertilidade, atuando diretamente nos testículos e influenciando a produção de espermatozoides.
+				</p>
+			</div>
+			<div class="termo" id="33">
+				<h3>Hormônios</h3>
+				<p>
+					Substância que tem por função promover a comunicação no organismo. Mensageiros químicos. Secretado no sangue.
+				</p>
+			</div>
+			<div class="termo" id="34">
+				<h3>Hormônios tróficos</h3>
+				<p>
+					Hormônio da hipófise que faz o controle de outras glândulas endócrinas.
+				</p>
+			</div>
+			<div class="termo" id="35">
+				<h3>Insulina</h3>
+				<p>
+					Hormônio produzido no pâncreas e tem como função e redução da concentração de açucar no sangue, promovendo a absorção pelas células.|
+				</p>
+			</div>
+			<div class="termo" id="36">
+				<h3>Oxitocina</h3>
+				<p>
+				</p>
+			</div>
+			<div class="termo" id="37">
+				<h3>Paratormônio</h3>
+				<p>
+					Homônio da hipófise responsável por induzir a aceleração das contração uterinas durante o parto estimulando a liberação de leite durante a amamentação.
+				</p>
+			</div>
+			<div class="termo" id="38">
+				<h3>Progesterona</h3>
+				<p>
+					Hormônio produzido pelas células do ovário que tem por função a preparação da membrana mucosa do útero para recepção o óvulo.
+				</p>
+			</div>
+			<div class="termo" id="39">
+				<h3>Prolactina</h3>
+				<p>
+					Hormônio responsável por estimular a produção de leite materno.
+				</p>
+			</div>
+			<div class="termo" id="40">
+				<h3>Somatotrofina</h3>
+				<p>
+					Hormônio da hipófise que regula o crescimento, hormônio GH.
+				</p>
+			</div>
+			<div class="termo" id="41">
+				<h3>Tiroxina</h3>
+				<p>
+					Hormônio produzido na tireóide, responsável por aumentar o metabolismo.
+				</p>
+			</div>
+			<div class="termo" id="42">
+				<h3>Testosterona</h3>
+				<p>
+					Hormônio masculino produzido nos testículos que determina as características físicas e comportamentais dos homens, como: fortalecimento da estrutura óssea; engrossamento da voz na puberdade; aumento da massa muscular.
+				</p>
+			</div>
+			<div class="termo" id="43">
+				<h3>Ciclo mestrual</h3>
+				<p>
+					Período de tempo que ocorre de maneira periódica no organismo feminino em que o organismo sofre variações hormonais, é dividido em 3 fases: fase menstrual, fase proliferativa e fase secretora.
+				</p>
+			</div>
+			<div class="termo" id="44">
+				<h3>Corpo amarelo</h3>
+				<p>
+					Estrutura endócrina responsável pela produção de progesterona. Esse corpo amarelo se origina após a fecundação do óvulo.
+				</p>
+			</div>
+			<div class="termo" id="45">
+				<h3>Endométrio</h3>
+				<p>
+					Tecido que reveste internamente o útero de espessura variável dependendo do ciclo menstrual e de acordo com a variação da concentração de hormônios na corrente sanguínea é nele que ocorre a implantação do embrião, possibilitando o início de uma gravidez.
+				</p>
+			</div>
+			<div class="termo" id="46">
+				<h3>Menstruação</h3>
+				<p>
+					Corrente de sangue e restos de mucosa uterina que são eliminados de maneira periódica pela vagina devido a estímulos hormonais.
+				</p>
+			</div>
+			<div class="termo" id="47">
+				<h3>Ovários</h3>
+				<p>
+					Par de órgãos do sistema reprodutor feminino responsável pela produção de hormônios sexuais femininos que apresentam duas partes: uma interna e outra externa. 
+				</p>
+			</div>
+			<div class="termo" id="48">
+				<h3>Ovulação</h3>
+				<p>
+					Processo de libertação de um óvulo do ovário, acionado pelas alterações hormonais e que ocorre uma vez durante cada ciclo menstrual.
+				</p>
+			</div>
+			<div class="termo" id="49">
+				<h3>Pudendo feminino</h3>
+				<p>
+					Vulva; conjunto das partes externas dos órgãos genitais feminino que tem a função de atuar como a porta para o útero assim fornecendo proteção.
+				</p>
+			</div>
+			<div class="termo" id="50">
+				<h3>Tubas uterinas</h3>
+				<p>
+					Dois tubos revestidos por músculos, estando localizados ao lado do útero e são responsáveis por conduzirem o óvulo ao útero, onde ocorre a fecundação.
+				</p>
+			</div>
+			<div class="termo" id="51">
+				<h3>Útero</h3>
+				<p>
+					Órgão muscular oco, em formato de pêra, pertencente ao aparelho reprodutor feminino que acolhe o óvulo fecundado durante seu desenvolvimento.
+				</p>
+			</div>
+			<div class="termo" id="52">
+				<h3>Vagina</h3>
+				<p>
+					Canal do órgão sexual feminino, que se localiza entre o colo do útero e a vulva. É responsável por ser o canal por onde sai o bebê quando nasce e por permitir a passagem da menstruação.
+				</p>
+			</div>
+			<div class="termo" id="53">
+				<h3>Ductos deferentes</h3>
+				<p>
+					Tubos que ligam os testículos as glândulas seminais e tem como função armazenar, reabsorver e de transportar espermatozoides em direção à uretra
+				</p>
+			</div>
+			<div class="termo" id="54">
+				<h3>Escroto</h3>
+				<p>
+					Bolsa constituída de pele e músculo, que envolve e protege os testículos e uma porção dos ductos deferentes. 
+				</p>
+			</div>
+			<div class="termo" id="55">
+				<h3>Esperma</h3>
+				<p>
+					Líquido esbranquiçado, secretado por diferentes glândulas genitais masculinas, que contém os espermatozóides para realização da fecundação do útero feminino.
+				</p>
+			</div>
+			<div class="termo" id="56">
+				<h3>Glândulas seminais</h3>
+				<p>
+					glândulas do sistema reprodutor masculino que atuam na produção do líquido seminal que auxilia na formação do sêmen. 
+				</p>
+			</div>
+			<div class="termo" id="57">
+				<h3>Pênis</h3>
+				<p>
+					Órgão sistema reprodutor masculino que é constituído por dois corpos cavernosos e um tubo central, por onde passa a uretra, tendo na sua extremidade a glande peniana, onde termina o meato urinário.
+				</p>
+			</div>
+			<div class="termo" id="58">
+				<h3>Próstata</h3>
+				<p>
+					Glândula que se localiza próxima à uretra masculina que faz parte do sistema reprodutor masculino que tem como função liquido que protege e nutre os espermatozoides no sêmen facilitando assim sua locomoção.
+				</p>
+			</div>
+			<div class="termo" id="59">
+				<h3>Testículo</h3>
+				<p>
+					Estruturas ovais do sistema reprodutor masculino localizadas na bolsa escrotal responsável pela produção de hormônios e de espermatozoides.
+				</p>
+			</div>
+		</div>
+	<div id="rodape" class="col-12">
+		<p>Autor: Lucas Garcia<br>2019.</p>
+	</div>
+	<link rel="stylesheet" type="text/css" href="glossario.css">
+	<script type="text/javascript">
+		function ativar(id){
+			if (document.querySelector('.termo.ativo')) {
+				document.querySelector('.termo.ativo').classList.remove('ativo');
+			}
+			document.getElementById(id).classList.add('ativo');
+		}
+	</script>
+</body>
+</html>

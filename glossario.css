@@ -1,0 +1,210 @@
+  .col-1{width:8.3%  }
+  .col-2{width:16.6% }
+  .col-3{width:25%   }
+  .col-4{width:33.3% }
+  .col-5{width:41.6% }
+  .col-6{width:50%   }
+  .col-7{width:58.3% }
+  .col-8{width:66.6% }
+  .col-9{width:75%   }
+  .col-10{width:83.3%}
+  .col-11{width:91.6%}
+  .col-12{width:100% }
+body{
+	background-color: white;
+	font-family: arial;
+	font-size: 18px;
+	}
+nav{
+  display: inline-block;
+  width: 28%;
+}
+img{
+  max-width: 450px;
+  max-height: 320px;
+}
+#cabecalho h1{
+	text-align: center;
+	color: #ffffff;
+	font-size: 25px;
+}
+#cabecalho{
+	background-color: #49505a;
+  height: 45px;
+  margin: 8px;
+  padding: 2px 0px 14px 0px;
+}
+
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,200);
+#cssmenu,
+#cssmenu ul,
+#cssmenu ul li,
+#cssmenu ul li a {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  list-style: none;
+  line-height: 1;
+  display: block;
+  position: relative;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+#cssmenu {
+  width: 260px;
+  font-family: Raleway, sans-serif;
+  color: #ffffff;
+  display: inline-block;
+}
+#cssmenu ul ul {
+  display: none;
+}
+#cssmenu > ul > li.active > ul {
+  display: block;
+}
+.align-right {
+  float: none;
+}
+#cssmenu > ul > li > a {
+  padding: 16px 22px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 16px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #3ab4a6;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu > ul > li > a:hover {
+  color: #d8f3f0;
+}
+#cssmenu ul > li.has-sub > a:after {
+  position: absolute;
+  right: 26px;
+  top: 19px;
+  z-index: 5;
+  display: block;
+  height: 10px;
+  width: 2px;
+  background: #ffffff;
+  content: "";
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub > a:before {
+  position: absolute;
+  right: 22px;
+  top: 23px;
+  display: block;
+  width: 10px;
+  height: 2px;
+  background: #ffffff;
+  content: "";
+  -webkit-transition: all 0.1s ease-out;
+  -moz-transition: all 0.1s ease-out;
+  -ms-transition: all 0.1s ease-out;
+  -o-transition: all 0.1s ease-out;
+  transition: all 0.1s ease-out;
+}
+#cssmenu ul > li.has-sub.open > a:after,
+#cssmenu ul > li.has-sub.open > a:before {
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+#cssmenu ul ul li a {
+  padding: 14px 22px;
+  cursor: pointer;
+  z-index: 2;
+  font-size: 14px;
+  text-decoration: none;
+  color: #dddddd;
+  background: #49505a;
+  -webkit-transition: color .2s ease;
+  -o-transition: color .2s ease;
+  transition: color .2s ease;
+}
+#cssmenu ul ul ul li a {
+  padding-left: 32px;
+}
+#cssmenu ul ul li a:hover {
+  color: #ffffff;
+}
+#cssmenu ul ul > li.has-sub > a:after {
+  top: 16px;
+  right: 26px;
+  background: #dddddd;
+}
+#cssmenu ul ul > li.has-sub > a:before {
+  top: 20px;
+  background: #dddddd;
+}
+
+#principal h2{
+  color: white;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+  background-color: #3ab4a6;
+}
+#principal{
+	text-align: justify;
+  display: inline-block;
+  width: 74%;
+  float: right;
+	}
+
+#rodape{
+	text-align: center;
+	background-color:  #49505a;
+	color: #ffffff;
+	padding: 0;
+  float: left;
+  margin: 8px;
+}
+img{border-color: black; border-style: solid;}
+@media screen and (min-device-width: 480px){
+	.col-1{width:8.3%}
+	.col-2{width:16.6%}
+	.col-3{width:25%}
+	.col-4{width:33.3%}
+	.col-5{width:41.6%}
+	.col-6{width:50%}
+	.col-7{width:58.3%}
+	.col-8{width:66.6%}
+	.col-9{width:75%}
+	.col-10{width:83.3%}
+	.col-11{width:91.6%}
+	.col-12{width:100%}
+	#menu li {float: none;}
+
+}
+	@media screen and (min-device-width: 480px) and (max-device-width: 770px){
+	.col-1{width:8.3%  }
+	.col-2{width:16.6% }
+	.col-3{width:25%   }
+	.col-4{width:33.3% }
+	.col-5{width:41.6% }
+	.col-6{width:50%   }
+	.col-7{width:58.3% }
+	.col-8{width:66.6% }
+	.col-9{width:75%   }
+	.col-10{width:83.3%}
+	.col-11{width:91.6%}
+	.col-12{width:100% }
+	}
+@media print{
+	[class *= "col-" ] {width: 100%} 
+	#menu {display: none;}
+}
+
+.termo { display: none; }
+.termo.ativo { display: initial; }
